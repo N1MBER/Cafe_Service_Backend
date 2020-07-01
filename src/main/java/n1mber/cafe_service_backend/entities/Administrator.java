@@ -1,8 +1,18 @@
 package n1mber.cafe_service_backend.entities;
 
-public class Administrator extends User{
+import lombok.Data;
 
-    public Administrator(String login, Roles role, String password) {
-        super(login, role, password);
-    }
+import javax.persistence.*;
+
+@Data
+@Entity
+@Table(name = "administrators")
+public class Administrator extends User{
+    @Id
+    @GeneratedValue
+    private Long id;
+    @OneToOne
+    private Cities cities;
+
+    public Administrator() {}
 }
