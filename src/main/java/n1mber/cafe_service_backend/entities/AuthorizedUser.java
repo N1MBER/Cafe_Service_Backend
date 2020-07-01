@@ -8,7 +8,7 @@ import lombok.Data;
 @Table(name = "authorized_user")
 public class AuthorizedUser extends User{
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.AUTO)
     @Column(name = 'id')
     private Long ID;
     @Column(name = 'name')

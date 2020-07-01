@@ -10,7 +10,7 @@ import java.util.Date;
 @Table(name = 'reservation')
 public class Reservation {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
     @ManyToOne
     private Cities cities;

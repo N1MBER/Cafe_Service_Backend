@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Table(name = "administrators")
 public class Administrator extends User{
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
     @OneToOne
     private Cities cities;
