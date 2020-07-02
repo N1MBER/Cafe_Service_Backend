@@ -1,4 +1,4 @@
-package n1mber.cafe_service_backend.repositories;
+package n1mber.cafe_service_backend.dbworker.repositories;
 
 import n1mber.cafe_service_backend.entities.Cities;
 import org.springframework.data.jpa.repository.JpaRepository;
